@@ -3,9 +3,13 @@
 <head>
 <script src="jquery-4.0.0.min.js"></script>
 <script>
-    n1 = 6
-    n2 = 2
+    var n1
+    var n2
 $(document).ready(function(){
+  $("#collect").click(function(){
+    n1 = parseInt($("#n1").val());
+    n2 = parseInt($("#n2").val());
+  });
   $("#soma").click(function(){
     soma = (n1 + n2)
     $("div").html(n1 + " + " + n2 + " = " + soma)
@@ -26,6 +30,9 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+    <input type="number" id="n1" placeholder="primeiro numero">
+    <input type="number" id="n2" placeholder="primeiro numero">
+    <button id="collect">Coletar numeros</button><br>
     <button id="soma">+</button>
     <button id="sub">-</button>
     <button id="mult">*</button>

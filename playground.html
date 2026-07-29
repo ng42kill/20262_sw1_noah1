@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-4.0.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#ba").click(function(){
+    $("#div1").html("Batton foi apertado")
+  });
+  $("#be").click(function(){
+    $("#div1").html("Betton foi apertado")
+  });
+  $("#bi").click(function(){
+    $("#div1").html("Bitton foi apertado")
+  });
+  $("#bo").click(function(){
+    $("#div1").html("Botton foi apertado")
+  });
+  $("#bu").click(function(){
+    $("#div1").html("<button id='secret'>???</button>")
+  });
+  $("#secret").click(function(){
+    $("#div2").html("woawza!!!!")
+  });
+  $("button").click(function(){
+    alert("Um botão foi apertado")
+  });
+});
+</script>
+</head>
+<body>
+    <button id="ba">Batton</button>
+    <button id="be">Betton</button>
+    <button id="bi">Bitton</button>
+    <button id="bo">Botton</button>
+    <button id="bu">Button</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

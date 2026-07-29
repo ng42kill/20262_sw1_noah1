@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-4.0.0.min.js"></script>
+<script>
+    n1 = 6
+    n2 = 2
+$(document).ready(function(){
+  $("#soma").click(function(){
+    soma = (n1 + n2)
+    $("div").html(n1 + " + " + n2 + " = " + soma)
+  });
+  $("#sub").click(function(){
+    sub = (n1 - n2)
+    $("div").html(n1 + " - " + n2 + " = " + sub)
+  });
+  $("#mult").click(function(){
+    mult = (n1 * n2)
+    $("div").html(n1 + " * " + n2 + " = " + mult)
+  });
+  $("#divi").click(function(){
+    divi = (n1 / n2)
+    $("div").html(n1 + " / " + n2 + " = " + divi)
+  });
+});
+</script>
+</head>
+<body>
+    <button id="soma">+</button>
+    <button id="sub">-</button>
+    <button id="mult">*</button>
+    <button id="divi">/</button>
+    <div></div>
+</body>
+</html>

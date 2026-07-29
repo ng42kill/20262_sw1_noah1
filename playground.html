@@ -5,22 +5,19 @@
 <script>
 $(document).ready(function(){
   $("#ba").click(function(){
-    $("#div1").html("Batton foi apertado")
+    $("div").html("Batton foi apertado")
   });
   $("#be").click(function(){
-    $("#div1").html("Betton foi apertado")
+    $("div").html("Betton foi apertado")
   });
   $("#bi").click(function(){
-    $("#div1").html("Bitton foi apertado")
+    $("div").html("Bitton foi apertado")
   });
   $("#bo").click(function(){
-    $("#div1").html("Botton foi apertado")
+    $("div").html("Botton foi apertado")
   });
   $("#bu").click(function(){
-    $("#div1").html("<button id='secret'>???</button>")
-  });
-  $("#secret").click(function(){
-    $("#div2").html("woawza!!!!")
+    $("div").html("Button foi apertado")
   });
   $("button").click(function(){
     alert("Um botão foi apertado")
@@ -34,7 +31,6 @@ $(document).ready(function(){
     <button id="bi">Bitton</button>
     <button id="bo">Botton</button>
     <button id="bu">Button</button>
-    <div id="div1"></div>
-    <div id="div2"></div>
+    <div></div>
 </body>
 </html>

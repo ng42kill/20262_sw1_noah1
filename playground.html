@@ -19,8 +19,14 @@ $(document).ready(function(){
   $("#bu").click(function(){
     $("div").html("Button foi apertado")
   });
-  $("button").click(function(){
-    alert("Um botão foi apertado")
+  //$("button").click(function(){
+    //alert("Um botão foi apertado")
+  //});
+  $("#bear").click(function(){
+    $("img").slideToggle()
+  });
+  $("#boo").click(function(){
+    $("img").slideToggle().fadeToggle()
   });
 });
 </script>
@@ -31,6 +37,8 @@ $(document).ready(function(){
     <button id="bi">Bitton</button>
     <button id="bo">Botton</button>
     <button id="bu">Button</button>
-    <div></div>
+    <div></div><br><br><br><br>
+    <button id="boo">Peek</button><br>
+    <img src="peekaboo.png" id="bear"></img>
 </body>
 </html>

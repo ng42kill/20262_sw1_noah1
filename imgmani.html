@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-4.0.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#bh").click(function(){
+    $("img").hide()
+  });
+  $("#bs").click(function(){
+    $("img").show()
+  });
+  $("#bt").click(function(){
+    $("img").toggle()
+  });
+  $("#bfi").click(function(){
+    $("img").fadeIn()
+  });
+  $("#bfo").click(function(){
+    $("img").fadeOut()
+  });
+  $("#bft").click(function(){
+    $("img").fadeToggle()
+  });
+  $("#bsu").click(function(){
+    $("img").slideUp()
+  });
+  $("#bsd").click(function(){
+    $("img").slideDown()
+  });
+  $("#bst").click(function(){
+    $("img").slideToggle()
+  });
+});
+</script>
+<style>
+    #containment {
+        height: 450px;
+    }
+</style>
+</head>
+<body>
+    <div id="containment" align="center"><img src="peekaboo.png" id="bear"></img></div>
+    <div align="center">
+    <button id="bh">Hide</button>
+    <button id="bs">Show</button>
+    <button id="bt">Toggle</button>
+    <button id="bfi">Fade In</button>
+    <button id="bfo">Fade Out</button>
+    <button id="bft">Fade Toggle</button>
+    <button id="bsu">Slide Up</button>
+    <button id="bsd">Slide Down</button>
+    <button id="bst">Slide Toggle</button>
+    </div>
+</body>
+</html>

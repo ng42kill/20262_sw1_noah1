@@ -3,34 +3,50 @@
 <head>
 <script src="jquery-4.0.0.min.js"></script>
 <script>
+    var speed = 400
+    var vel = 5
 $(document).ready(function(){
   $("#bh").click(function(){
-    $("img").hide()
+    $("img").hide(speed)
   });
   $("#bs").click(function(){
-    $("img").show()
+    $("img").show(speed)
   });
   $("#bt").click(function(){
-    $("img").toggle()
+    $("img").toggle(speed)
   });
   $("#bfi").click(function(){
-    $("img").fadeIn()
+    $("img").fadeIn(speed)
   });
   $("#bfo").click(function(){
-    $("img").fadeOut()
+    $("img").fadeOut(speed)
   });
   $("#bft").click(function(){
-    $("img").fadeToggle()
+    $("img").fadeToggle(speed)
   });
   $("#bsu").click(function(){
-    $("img").slideUp()
+    $("img").slideUp(speed)
   });
   $("#bsd").click(function(){
-    $("img").slideDown()
+    $("img").slideDown(speed)
   });
   $("#bst").click(function(){
-    $("img").slideToggle()
+    $("img").slideToggle(speed)
   });
+  $("#slow").click(function(){
+    if (vel > 0){
+    speed += 200
+    vel -= 1
+    $("text").html(vel)
+    }
+  })
+  $("#fast").click(function(){
+    if (speed > 0){
+    speed -= 200
+    vel += 1
+    $("text").html(vel)
+    }
+  })
 });
 </script>
 <style>
@@ -50,7 +66,10 @@ $(document).ready(function(){
     <button id="bft">Fade Toggle</button>
     <button id="bsu">Slide Up</button>
     <button id="bsd">Slide Down</button>
-    <button id="bst">Slide Toggle</button>
+    <button id="bst">Slide Toggle</button><br><br>
+    <button id="slow">-</button>
+    <text>5</text>
+    <button id="fast">+</button>
     </div>
 </body>
 </html>

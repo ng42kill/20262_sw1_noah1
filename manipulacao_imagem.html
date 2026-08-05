@@ -4,7 +4,7 @@
 <script src="jquery-4.0.0.min.js"></script>
 <script>
     var speed = 400
-    var vel = 6
+    var vel = 5
     const numimg = [
       "zero.png",
       "one.png",
@@ -17,31 +17,31 @@
     ]
 $(document).ready(function(){
   $("#bh").click(function(){
-    $("img").hide(speed)
+    $("#bear").hide(speed)
   });
   $("#bs").click(function(){
-    $("img").show(speed)
+    $("#bear").show(speed)
   });
   $("#bt").click(function(){
-    $("img").toggle(speed)
+    $("#bear").toggle(speed)
   });
   $("#bfi").click(function(){
-    $("img").fadeIn(speed)
+    $("#bear").fadeIn(speed)
   });
   $("#bfo").click(function(){
-    $("img").fadeOut(speed)
+    $("#bear").fadeOut(speed)
   });
   $("#bft").click(function(){
-    $("img").fadeToggle(speed)
+    $("#bear").fadeToggle(speed)
   });
   $("#bsu").click(function(){
-    $("img").slideUp(speed)
+    $("#bear").slideUp(speed)
   });
   $("#bsd").click(function(){
-    $("img").slideDown(speed)
+    $("#bear").slideDown(speed)
   });
   $("#bst").click(function(){
-    $("img").slideToggle(speed)
+    $("#bear").slideToggle(speed)
   });
   $("#slow").click(function(){
     if (vel > 0){
@@ -54,7 +54,7 @@ $(document).ready(function(){
     if (speed > 0){
     speed -= 200
     vel += 1
-    $("text").html(vel)
+    $("#numvel").attr("src", numimg[vel])
     }
   })
 });

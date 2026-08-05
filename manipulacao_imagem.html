@@ -48,6 +48,12 @@ $(document).ready(function(){
     speed += 200
     vel -= 1
     $("#numvel").attr("src", numimg[vel])
+    $("#numvel").animate({
+      height: "70px", width: "60px", left: "-=20px"
+    }, "fast")
+    $("#numvel").animate({
+      height: "50px", width: "40px", left: "+=20px"
+    }, "fast")
     }
   })
   $("#fast").click(function(){
@@ -55,6 +61,12 @@ $(document).ready(function(){
     speed -= 200
     vel += 1
     $("#numvel").attr("src", numimg[vel])
+    $("#numvel").animate({
+      height: "70px", width: "60px", left: "-=20px"
+    }, "fast")
+    $("#numvel").animate({
+      height: "50px", width: "40px", left: "+=20px"
+    }, "fast")
     }
   })
 });

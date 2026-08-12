@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-4.0.0.min.js"></script>
+<script>
+
+    var size = 30;
+    var display = 3;
+$(document).ready(function(){
+  $("#CR").click(function(){
+    $("p").css("color", "red")
+  });
+  $("#CG").click(function(){
+    $("p").css("color", "green")
+  });
+  $("#CB").click(function(){
+    $("p").css("color", "blue")
+  });
+  $("#beeg").click(function(){
+    if (size < 70){
+    size += 10
+    display += 1
+    $("p").css("font-size", size + "px")
+    $("text").text(display)
+    }
+  });
+  $("#smol").click(function(){
+    if (size > 10){
+    size -= 10
+    display -= 1
+    $("p").css("font-size", size + "px")
+    $("text").text(display)
+    }
+  });
+  $("#exhibit").click(function(){
+    alert("Color: " + $("p").css("color"));
+  });
+});
+</script>
+<style>
+    #containment {
+        height: 200px;
+        font-size: 30px;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div align="center">
+    <button id="CR" style="background-color: red">Red</button>
+    <button id="CG" style="background-color: green">Green</button>
+    <button id="CB" style="background-color: blue">Blue</button>
+    <button id="exhibit">Exhibit</button> <br>
+    <button id="smol">-</button>
+    <text>3</text>
+    <button id="beeg">+</button>
+    </div>
+    <div id="containment" align="center"><p>Lorem Ipsum Dolor Sit Amet</p></div>
+</body>
+</html>

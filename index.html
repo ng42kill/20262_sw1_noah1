@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("#soma").click(function(){
         n2 = parseInt($("#n2").val());
             $.ajax({
-                    url: "operations/soma.php",
+                    url: "soma.php",
                     type: "POST",
                     data: "n1=" + n1 + "&n2=" + n2,
                     dataType: "html"
@@ -78,6 +78,9 @@ $(document).ready(function(){
                     $("#resultado").html(resposta);
                     $("#hist").append(n1 + " / " + n2 + " = " + resposta + "<br>");
                     n1 = resposta
+                    if (n1 == "nuh uh!"){
+                        n1 = 0
+                    }
 
             }).fail(function(jqXHR, textStatus ) {
                 alert("Request failed: " + textStatus);

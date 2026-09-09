@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("#soma").click(function(){
         n2 = parseInt($("#n2").val());
             $.ajax({
-                    url: "soma.php",
+                    url: "operations/soma.php",
                     type: "POST",
                     data: "n1=" + n1 + "&n2=" + n2,
                     dataType: "html"

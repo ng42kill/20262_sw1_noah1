@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php 
+    include('exibe_a.php')
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery-4.0.0.min.js"></script>
-    <script>
+    <script> 
         $(document).ready(function(){
             $("button").click(function(){
                 var nome = $("#nome").val();
@@ -31,9 +34,14 @@
     </script>
 </head>
 <body>
-        <input type="text" id="nome"> nome <br>
-        <input type="text" id="email"> email <br>
+        <input type="text" id="nome" required> nome <br>
+        <input type="text" id="email" required> email <br>
         <button>Enviar</button><br>
-        <div></div>
+        <hr><br>
+        <div>
+            <?php 
+            exibe()
+            ?>
+        </div>
 </body>
 </html>

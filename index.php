@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <script src="jquery-4.0.0.min.js"></script>
     <script> 
         $(document).ready(function(){
@@ -34,14 +35,11 @@
     </script>
 </head>
 <body>
-        <input type="text" id="nome" required> nome <br>
-        <input type="text" id="email" required> email <br>
+        <button type="button" class="btn btn-primary">Novo</button><br>
+        <input type="text" id="nome"> nome <br>
+        <input type="text" id="email"> email <br>
         <button>Enviar</button><br>
-        <hr><br>
-        <div>
-            <?php 
-            exibe()
-            ?>
-        </div>
+        <br>
+        <div><?php exibe(); ?></div>
 </body>
 </html>
